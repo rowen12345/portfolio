@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Scholarship Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/awards.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/education.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Rowen Ang</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#awards">Awards</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO / ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Scholarship Portfolio · 2026</p>
+        <h1>Building things<br>that <em>matter.</em></h1>
+        <p class="hero-bio">
+          I am an aspiring software engineer currently serving National Service with the Singapore Police Force while awaiting matriculation into the Computer Science programme at the National University of Singapore in 2027.
+          <span class="bio-extra" style="display:none;"> I graduated with a Diploma in Engineering Science from Ngee Ann Polytechnic, where the broad curriculum exposed me to physics, mathematics, electrical engineering, and computing. Over the course of my three years, I developed a strong interest in computing, which led me to pursue Computer Science.
+          <br><br>
+          My interests lie in backend development and AI engineering. In my free time, I practise problem solving on LeetCode and learn modern frameworks such as React and FastAPI.</span>
+        </p>
+        <button class="read-more-btn" onclick="toggleBio(this)">Read more ↓</button>
+        <div class="hero-links">
+          <a href="https://www.linkedin.com/in/rowenang05/" class="btn">Contact Me</a>
+          <a href="#projects" class="btn ghost">View Projects ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Education</h2>
+      </div>
+      <div class="education-list">
+
+        <div class="education-item">
+          <div class="education-year">2027</div>
+          <div>
+            <div class="education-title">Bachelor of Computing (Computer Science)</div>
+            <div class="education-org">National University of Singapore</div>
+            <span class="education-badge">Incoming</span>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <div class="education-year">2024</div>
+          <div>
+            <div class="education-title">Diploma in Engineering Science</div>
+            <div class="education-org">Ngee Ann Polytechnic</div>
+            <span class="education-badge">Graduated</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Skills & Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-cell"><div class="skill-label">Language</div><div class="skill-name">Python</div><div class="skill-bar"><div class="skill-bar-fill" data-width="92%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Language</div><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Language</div><div class="skill-name">C#</div><div class="skill-bar"><div class="skill-bar-fill" data-width="65%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Language</div><div class="skill-name">HTML</div><div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Language</div><div class="skill-name">CSS</div><div class="skill-bar"><div class="skill-bar-fill" data-width="50%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Framework</div><div class="skill-name">React</div><div class="skill-bar"><div class="skill-bar-fill" data-width="20%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Framework</div><div class="skill-name">FastAPI</div><div class="skill-bar"><div class="skill-bar-fill" data-width="20%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Tools</div><div class="skill-name">Git / GitHub</div><div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">RPA</div><div class="skill-name">UIpath</div><div class="skill-bar"><div class="skill-bar-fill" data-width="60%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Database</div><div class="skill-name">PostgreSQL</div><div class="skill-bar"><div class="skill-bar-fill" data-width="72%"></div></div></div>
+        <div class="skill-cell"><div class="skill-label">Library</div><div class="skill-name">Pandas</div><div class="skill-bar"><div class="skill-bar-fill" data-width="70%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Projects & Experience</h2>
+      </div>
+      <div class="project-list">
+        <div class="project-item">
+          <div>
+            <div class="project-tag">Research Intern · 2024-2025</div>
+            <div class="project-title">AI models to predict IV curves of perovskite solar cells</div>
+            <p class="project-desc">Conducted research under Erik Birgersson at the National University of Singapore, developing AI models in MATLAB to predict current-voltage (I-V) curves of perovskite solar cells using 31 input parameters, reducing required prediction points from 45 to 10 while maintaining accuracy; the full curve was reconstructed using Piecewise Cubic Hermite Interpolation (PCHIP) and spline interpolation, achieving a mean RMSE of 5 across more than 6,600 predictions, with neural networks optimized through extensive hyperparameter tuning and an interactive MATLAB App Designer tool built for real-time I-V curve prediction based on user-input parameters.</p>
+            <div class="project-tech">
+              <span class="tag">MATLAB</span><span class="tag">Neural network</span><span class="tag">LaTeX</span>
+            </div>
+          </div>
+          <a href="https://github.com/rowen12345/FYP_PSC_AI" class="project-link" target="_blank">GitHub ↗</a>
+        </div>
+        <div class="project-item">
+          <div>
+            <div class="project-tag">Learning Javascript · 2025</div>
+            <div class="project-title">To-do list</div>
+            <p class="project-desc">Developed a to-do list web application using JavaScript, HTML, and CSS through largely independent learning and troubleshooting with minimal reliance on large language models, implementing extensive DOM manipulation and arrow functions to handle user interactions and dynamically update tasks, while the two-day debugging and development process significantly deepened my understanding of JavaScript and how dynamic web applications function.</p>
+            <div class="project-tech">
+              <span class="tag">Javascript</span><span class="tag">css</span><span class="tag">HTML</span>
+            </div>
+          </div>
+          <a href="https://github.com/rowen12345/to-do-list" class="project-link" target="_blank">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section id="awards">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>Awards & Achievements</h2>
+      </div>
+      <div class="awards-list">
+
+        <div class="award-item">
+          <div class="award-year">2025</div>
+          <div>
+            <div class="award-title">West Coast SG60 Community Scholar</div>
+            <div class="award-org">West Coast Youths Volunteer</div>
+            <span class="award-badge">$1,000 Award</span>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-year">2025</div>
+          <div>
+            <div class="award-title">Director's list Y2S2 — 4.0 GPA</div>
+            <div class="award-org">Ngee Ann Polytechnic</div>
+            <span class="award-badge">Academic</span>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-year">2024</div>
+          <div>
+            <div class="award-title">Best Performance in Physics 1 Y2S1</div>
+            <div class="award-org">Ngee Ann Polytechnic</div>
+            <span class="award-badge">Academic | $50 award</span>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-year">2024</div>
+          <div>
+            <div class="award-title">Senior category Smophi Imaginary Robotics Challenge ROBOROAZ SINGAPORE 2024</div>
+            <div class="award-org">SUTD · National Robotics Programme</div>
+            <span class="award-badge">2nd Place</span>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-year">2025</div>
+          <div>
+            <div class="award-title">Edusave Certificate of academic achievements</div>
+            <div class="award-org">Ministry of Education Singapore</div>
+            <span class="award-badge">Top 25%</span>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-year">2024</div>
+          <div>
+            <div class="award-title">Edusave Certificate of academic achievements</div>
+            <div class="award-org">Ministry of Education Singapore</div>
+            <span class="award-badge">Top 25%</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Rowen Ang · Portfolio</span>
+    <span>rowen.ang123@gmail.com</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

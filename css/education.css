@@ -1,0 +1,25 @@
+.education-list { display: flex; flex-direction: column; }
+.education-item {
+  display: grid; grid-template-columns: 80px 1fr;
+  gap: 32px; padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  opacity: 1;
+  transform: none;
+}
+.education-item.visible { opacity: 1; transform: none; }
+.education-year {
+  font-size: 16px; color: var(--muted); padding-top: 2px;
+  font-variant-numeric: tabular-nums;
+}
+.education-title { font-family: var(--serif); font-size: 18px; margin-bottom: 6px; }
+.education-org { font-size: 15px; color: var(--muted); }
+.education-badge {
+  display: inline-block; margin-top: 8px;
+  padding: 3px 9px; font-size: 12px;
+  letter-spacing: .08em; text-transform: uppercase;
+  background: var(--accent); color: white;
+}
+
+@media (max-width: 600px) {
+  .education-item { grid-template-columns: 1fr; gap: 4px; }
+}

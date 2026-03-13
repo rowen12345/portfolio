@@ -1,0 +1,48 @@
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  padding-top: 80px;
+}
+.hero-inner { max-width: 680px; }
+.hero-eyebrow {
+  font-size: 15px; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 24px;
+  opacity: 0; animation: fadeUp .6s ease forwards .3s;
+}
+h1 {
+  font-family: var(--serif);
+  font-size: clamp(60px, 9vw, 80px); /* change these values */
+  line-height: 1.05; letter-spacing: -.02em;
+  margin-bottom: 28px;
+  opacity: 0; animation: fadeUp .7s ease forwards .45s;
+}
+h1 em { font-style: italic; color: var(--accent); }
+.hero-bio {
+  font-size: 20px; color: #555; max-width: 520px;
+  margin-bottom: 40px; line-height: 1.8;
+  opacity: 0; animation: fadeUp .7s ease forwards .6s;
+}
+.hero-links {
+  display: flex; gap: 16px; flex-wrap: wrap;
+  opacity: 0; animation: fadeUp .7s ease forwards .75s;
+}
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 22px;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: .06em; text-transform: uppercase;
+  text-decoration: none; border: 1px solid var(--ink);
+  color: var(--ink); transition: all .2s;
+}
+.btn:hover { background: var(--ink); color: var(--paper); }
+.btn.ghost { background: transparent; border-color: var(--border); color: var(--muted); }
+.btn.ghost:hover { border-color: var(--ink); color: var(--ink); background: transparent; }
+.read-more-btn {
+  background: none; border: none; cursor: pointer;
+  font-family: var(--mono); font-size: 12px;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); padding: 0; margin-top: 10px;
+  transition: opacity .2s;
+}
+.read-more-btn:hover { opacity: .7; }
+ 

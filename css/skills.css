@@ -1,0 +1,28 @@
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+}
+.skill-cell {
+  padding: 24px 20px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background .2s;
+}
+.skill-cell:hover { background: #eceae4; }
+.skill-label {
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 10px;
+}
+.skill-name { font-size: 15px; font-weight: 500; }
+.skill-bar {
+  margin-top: 12px; height: 2px; background: var(--border);
+  position: relative; overflow: hidden;
+}
+.skill-bar-fill {
+  position: absolute; top: 0; left: 0; height: 100%;
+  background: var(--ink);
+  width: 0;
+  transition: width 1.2s cubic-bezier(.16,1,.3,1);
+}

@@ -18,13 +18,14 @@ h1 {
 }
 h1 em { font-style: italic; color: var(--accent); }
 .hero-bio {
-  font-size: 20px; color: #555; max-width: 520px;
+  font-size: 16px; color: #555; max-width: 520px;
   margin-bottom: 40px; line-height: 1.8;
   opacity: 0; animation: fadeUp .7s ease forwards .6s;
 }
 .hero-links {
   display: flex; gap: 16px; flex-wrap: wrap;
   opacity: 0; animation: fadeUp .7s ease forwards .75s;
+  padding: -20px;
 }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
@@ -45,4 +46,26 @@ h1 em { font-style: italic; color: var(--accent); }
   transition: opacity .2s;
 }
 .read-more-btn:hover { opacity: .7; }
- 
+.hero-socials {
+  display: flex; gap: 20px; margin-top: 32px;
+  opacity: 0; animation: fadeUp .7s ease forwards .9s;
+}
+.hero-socials a {
+  color: var(--muted); transition: color .2s, transform .2s;
+  display: flex;
+}
+.hero-socials a:hover {
+  color: var(--accent); transform: translateY(-2px);
+}
+
+.btn-cv {
+  font-size: 14px;
+  padding: 14px 32px;
+  border-color: var(--accent);
+  color: var(--accent);
+  letter-spacing: .1em;
+}
+.btn-cv:hover {
+  background: var(--accent);
+  color: var(--paper);
+}
